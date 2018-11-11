@@ -3,10 +3,10 @@ body {
 	font-family: 'Verdana';
 }
 
-.color-container {
-	width: 100%;
-}
-
 .row {
 	margin-top: 10%;
+}
+
+.row div {
+	margin-top: 2.5%;
 }
