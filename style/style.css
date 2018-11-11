@@ -2,3 +2,11 @@ body {
 	text-align: center;
 	font-family: 'Verdana';
 }
+
+.color-container {
+	width: 100%;
+}
+
+.row {
+	margin-top: 10%;
+}

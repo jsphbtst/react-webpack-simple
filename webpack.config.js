@@ -1,4 +1,6 @@
 
+
+// https://agitated-hoover-cdafcd.netlify.com/
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -40,11 +42,9 @@ module.exports = {
 			},
 			{
 				test: /\.html$/,
-				use: [
-					{
-						loader: 'html-loader'
-					}
-				]
+				use: {
+					loader: 'html-loader'
+				}
 			},
 			{
 				test: /\.css$/,
@@ -62,6 +62,9 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
 			chunkFilename: '[id].css'
+		}),
+		new webpack.DefinePlugin({
+			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 		})
 	]
 }
