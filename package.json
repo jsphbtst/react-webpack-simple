@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "start": "webpack-dev-server --open --mode development",
+    "watch": "webpack --config webpack.config.js --watch",
     "build": "NODE_ENV=production npm run clean && webpack -p"
   },
   "author": "",
